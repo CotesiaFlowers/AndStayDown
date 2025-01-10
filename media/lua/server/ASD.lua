@@ -53,13 +53,13 @@ end
 
 Events.EveryTenMinutes.Add(EveryTenMinutes)
 
--- local function ReanimateNearPlayer(player, args)
+-- local function GetSquareNearPlayer(player, args)
 -- 	player:getCell():getGridSquare(args[1], args[2], args[3])
 -- end
 
 -- local function OnClientCommand(module, command, player, args)
 -- 	if (module == "ASD" and command == "ReanimateNearPlayer") then
--- 		ReanimateAtSquare(ReanimateNearPlayer(player, args))
+-- 		ReanimateSquare(GetSquareNearPlayer(player, args))
 -- 	end
 -- end
 
