@@ -64,7 +64,7 @@ local function EveryTenMinutes()
 	-- end
 
 	for i=1, #Clever do
-		if Clever[#Clever][2] >= getGameTime():getWorldAgeHours() then -- reanimate_time >= now
+		if Clever[#Clever][2] >= gameTime:getWorldAgeHours() then -- reanimate_time >= now
 			local corpse = Clever[#Clever][1]
 			if corpse then
 				corpse:setFakeDead(true)
