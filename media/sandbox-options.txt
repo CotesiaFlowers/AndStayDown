@@ -1,0 +1,49 @@
+VERSION = 1,
+option ASD.ReanimateChance
+{
+    type = integer, min = 1, max = 100, default = 50,
+    page = Reanimation,
+    translation = ReanimateChance,
+}
+
+option ASD.ReanimateTimeMin
+{
+    type = double, min = 0.0, max = 9999.0, default = 12.0,
+    page = Reanimation,
+    translation = ReanimateTimeMin,
+}
+
+option ASD.ReanimateTimeMax
+{
+    type = double, min = 0.0, max = 9999.0, default = 12.0,
+    page = Reanimation,
+    translation = ReanimateTimeMax,
+}
+
+option ASD.ReanimateNearbyCorpses
+{
+    type = boolean, default = true,
+    page = Reanimation,
+    translation = ReanimateNearbyCorpses,
+}
+
+option ASD.FakeDeadChance
+{
+    type = integer, min=0, max = 100, default = 2,
+    page = Reanimation,
+    translation = FakeDeadChance,
+}
+
+option ASD.ReanimateSkeletons
+{
+    type = boolean, default = false,
+    page = Reanimation,
+    translation = ReanimateSkeletons,
+}
+
+option ASD.ReanimatePlayers
+{
+    type = boolean, default = false,
+    page = Reanimation,
+    translation = ReanimatePlayers,
+}

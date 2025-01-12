@@ -1,0 +1,22 @@
+Sandbox_EN = {
+	Sandbox_ReanimateChance = "Reanimation Chance",
+	Sandbox_ReanimateChance_tooltip = "Percent chance for a corpse to reanimate.",
+
+    Sandbox_ReanimateTimeMin = "Minimum Time to Reanimate",
+	Sandbox_ReanimateTimeMin_tooltip = "The minimum amount of time it takes for a corpse to reanimate (in hours).",
+
+    Sandbox_ReanimateTimeMax = "Maximum Time to Reanimate",
+	Sandbox_ReanimateTimeMax_tooltip = "The maximum amount of time it takes for a corpse to reanimate (in hours).",
+
+    Sandbox_ReanimateNearbyCorpses = "Reanimate Corpses Near Player(s)",
+	Sandbox_ReanimateNearbyCorpses_tooltip = "If enabled corpses already in an area (such as prop corpses) will reanimate. Disabling this means only corpses killed by the player(s) will reanimate.",
+
+    Sandbox_FakeDeadChance = "Fake Dead Chance",
+	Sandbox_FakeDeadChance_tooltip = "Percent chance that reanimated corpses will pretend to be dead.",
+
+    Sandbox_ReanimateSkeletons = "Reanimate Skeletons",
+	Sandbox_ReanimateSkeletons_tooltip = "Reanimates skeleton corpses if enabled.",
+
+    Sandbox_ReanimatePlayers = "Reanimate Player(s)",
+	Sandbox_ReanimatePlayers_tooltip = "Reanimates player corpses if enabled, including uninfected players."
+}
