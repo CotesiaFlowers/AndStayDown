@@ -2,12 +2,20 @@ Clever = {}
 Squares = {}
 
 local Reanimate = function(corpse)
-	local reanimate_time = getGameTime():getWorldAgeHours() + 12.0
+	local reanimate_time = getGameTime():getWorldAgeHours() + 0.5
 
-	if 2 > ZombRand(100) then
-		Clever[#Clever + 1] = { corpse, reanimate_time - 0.5 }
-	else
-		corpse:setReanimateTime(reanimate_time)
+	local corpseModData = corpse:getModData()
+
+	if (corpseModData.dead ~= true) then
+		if 50 <= ZombRand(100) then
+			corpseModData.dead = true
+		else
+			if 2 > ZombRand(100) then
+				Clever[#Clever + 1] = { corpse, reanimate_time - 0.5 }
+			else
+				corpse:setReanimateTime(reanimate_time)
+			end
+		end
 	end
 end
 
